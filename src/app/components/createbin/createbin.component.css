@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #212529; /* Dark gray text for contrast */
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #1e90ff; /* Sky blue for the title */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border: 2px solid #1e90ff; /* Sky blue border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.container input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px;
+    background-color: #f8f9fa; /* Very light gray for input background */
+    color: #212529; /* Dark gray text */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container input[type="text"]:focus {
+    border-color: #1e90ff; /* Sky blue on focus */
+    box-shadow: 0 0 5px #1e90ff;
+}
+.container textarea{
+    width: 95%;
+    height: 250px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px;
+    background-color: #f8f9fa; /* Very light gray for input background */
+    color: #212529; /* Dark gray text */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* Error Messages */
+#error {
+    color: red;
+    font-size: 0.9em;
+    margin:10px;
+}
+
+/* Buttons */
+.container button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: #1e90ff; /* Sky blue */
+    color: #ffffff; /* White text */
+}
+
+.btn-submit:hover {
+    background-color: #007bff; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Reset Button */
+.btn-reset {
+    background-color: #6c757d; /* Gray background for reset */
+    color: #ffffff; /* White text */
+}
+
+.btn-reset:hover {
+    background-color: #5a6268; /* Slightly darker gray on hover */
+    transform: scale(1.05);
+}
+
+/* Form Layout */
+.container h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal;
+}

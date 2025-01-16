@@ -1,0 +1,10 @@
+
+<h1>Login Form </h1>
+<form class="container" [formGroup]=loginForm>
+email: <input type="text" placeholder="enter email" [formControl]="email">
+<h3 [hidden]="email.untouched || email.valid" id="error"> Enter correct email </h3>
+password: <input type="password" placeholder="enter password" [formControl]="password">
+<h3 [hidden]="password.untouched || password.valid" id="error"> Enter correct password </h3>
+<button class="btn-submit" (click)="login()"> Submit </button>
+<button class="btn-reset" (click)="reset()"> Reset </button>
+</form>

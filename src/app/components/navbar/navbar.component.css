@@ -1,0 +1,73 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1e90ff; /* Sky blue background */
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+nav h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: #ffffff; /* White text for the title link */
+    transition: color 0.3s ease;
+}
+
+nav h1 a:hover {
+    color: #ffdd57; /* Golden yellow on hover */
+}
+
+/* Links Container */
+#links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+/* Link Styling */
+#links h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#links a {
+    text-decoration: none;
+    color: #ffffff; /* White text for links */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#links a:hover {
+    cursor: pointer;
+    color: #ffdd57; /* Golden yellow on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Active Link */
+#links a.active {
+    font-weight: bold;
+    color: #ffdd57; /* Golden yellow for active link */
+}
+
+/* Divider Line */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #1e90ff; /* Matches nav background */
+    margin: 0;
+}

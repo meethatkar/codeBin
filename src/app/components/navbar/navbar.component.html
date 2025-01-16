@@ -1,0 +1,17 @@
+<div>
+    <nav>
+        <h1> <a routerLink="/"> CodeBin </a></h1>
+        <div id="links">
+            <h3> <a routerLink="/createcode" routerLinkActive="active"> Create  </a></h3>
+            @if(authService.isAutheticated()){
+                <h3> <a (click)="this.authService.logout()"> Logout </a></h3>    
+            }
+            @else {
+                <h3> <a routerLink="/login" routerLinkActive="active"> Login </a></h3>
+                <h3> <a routerLink="/signup" routerLinkActive="active"> Signup </a></h3>
+            }
+            <h3> <a routerLink="/aboutus" routerLinkActive="active"> aboutus </a></h3>
+        </div>
+    </nav>
+</div>
+<hr/>

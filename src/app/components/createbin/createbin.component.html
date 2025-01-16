@@ -1,0 +1,10 @@
+
+<h1>Code Box </h1>
+<form class="container" [formGroup]=binForm>
+title: <input type="text" placeholder="enter title" [formControl]="title">
+<h3 [hidden]="title.untouched || title.valid" id="error"> Enter correct title </h3>
+Code: <textarea type="text" placeholder="enter code" [formControl]="code"> </textarea>
+<h3 [hidden]="code.untouched || code.valid" id="error"> Enter code  </h3>
+<button class="btn-submit" (click)="create()"> create </button>
+<button class="btn-reset" (click)="reset()"> Reset </button>
+</form>
