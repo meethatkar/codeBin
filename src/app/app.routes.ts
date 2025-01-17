@@ -6,6 +6,8 @@ import { HomeComponent } from './components/home/home.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { authGuard } from './gaurds/auth.guard';
+import { Component } from '@angular/core';
+import { ViewSnippetComponent } from './components/view-snippet/view-snippet.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +24,11 @@ export const routes: Routes = [
         path: 'signup',
         component: SignupComponent,
         title: 'signup'
+    },
+    {
+        path:'snippet/:id',
+        component:ViewSnippetComponent,
+        title:'Codes',
     },
     {
         path:'aboutus',

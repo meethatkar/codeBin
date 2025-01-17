@@ -3,12 +3,13 @@ import {doc, getDoc, getFirestore} from "firebase/firestore";
 import {collection, addDoc, getDocs} from "firebase/firestore";
 import { AuthService } from './auth.service';
 import {Snippet} from '../models/Snippet';
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
 export class DbService {
   private db?:any;
-  constructor(private authService:AuthService) {
+  constructor(private authService:AuthService, private router:Router) {
     this.db = getFirestore();
    }
 
@@ -20,6 +21,7 @@ export class DbService {
         by: this.authService.getUid()
       });
       console.log("Document written with ID: ",docRef.id);
+      this.router.navigate(['/']);
     } catch (e) {
       console.error("Error adding document: ",e);
       alert("Error while creating");

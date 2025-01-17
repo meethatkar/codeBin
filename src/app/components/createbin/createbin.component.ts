@@ -13,7 +13,7 @@ import { Snippet } from '../../models/Snippet';
 export class CreatebinComponent {
 
   constructor(private dbService: DbService){}
-
+    public counter:any=0;
     title=new FormControl("",[
       Validators.required
     ])
@@ -28,7 +28,9 @@ export class CreatebinComponent {
     })
   
     create(){
+      this.counter++;
       console.log(this.binForm.value);
+      // const sendingData = this.binForm.value+this.counter;  temp changes
       this.dbService.createSnippet(this.binForm.value as Snippet);
     }
   

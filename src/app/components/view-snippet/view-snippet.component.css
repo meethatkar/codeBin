@@ -1,0 +1,59 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
+}
+
+/* Container for Code Snippet */
+div {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #ffffff; /* White background for the snippet */
+    border: 1px solid #0073e6; /* Blue border for emphasis */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title Styling */
+h3 {
+    margin: 0 0 15px;
+    font-size: 1.5em;
+    color: #0073e6; /* Blue color for title */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Code Block Styling */
+pre {
+    margin: 0;
+    padding: 15px;
+    font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+    font-size: 1.1em;
+    background-color: #f9f9f9; /* Light gray background for code block */
+    color: #333; /* Dark gray text */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 5px; /* Rounded corners */
+    overflow-x: auto; /* Horizontal scrolling for long code lines */
+    white-space: pre-wrap; /* Wrap long lines of code */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    div {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    pre {
+        font-size: 1em;
+    }
+}

@@ -1,1 +1,16 @@
-<h1> Welcome to CodeBin!!!!!1 </h1>
+    @if(items.length==0){
+        no data found;
+    }
+    @else{
+        <ul>
+            @for(item of items; track items.id){
+            <li>
+                <a [routerLink]="['/snippet', item.id]"> {{item.title}} </a>
+            </li>
+        }
+        </ul>
+    <br> <br>
+
+}
+    
+<!-- {{counter}}  temp changes-->
